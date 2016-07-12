@@ -4,24 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SVGに対応していないブラウザでは代替のPNGを表示する</title>
-<style>
-#shirt {
-  background-color: blue;
-}
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script>
-window.onload = function () {
-  // ModernizrでSVG対応を判別
-  if (!Modernizr.svg) {
-    var shirt = document.getElementById("logo");
-    shirt.setAttribute("src", "shirt.png");
-  }
-};
-</script>
 </head>
 <body>
 <h1>SVGに対応していないブラウザでは代替のPNGを表示する</h1>
-<img src="shirt.svg" id="shirt">
+<ul>
+  <li><a href="01.html">Modernizrをダウンロードして利用</a></li>
+  <li><a href="02.html">ModernizrをCDNから利用</a></li>
+</ul>
 </body>
 </html>

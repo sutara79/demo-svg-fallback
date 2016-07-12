@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ModernizrをCDNから利用</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<style>
+#shirt {
+  background-color: blue;
+}
+</style>
+<script>
+window.onload = function () {
+  // ModernizrでSVG対応を判別
+  if (!Modernizr.svg) {
+    var img = document.getElementById("shirt");
+    img.setAttribute("src", "shirt.png");
+  }
+};
+</script>
+</head>
+<body>
+<header>
+  <h1>ModernizrをCDNから利用</h1>
+</header>
+<img src="shirt.svg" id="shirt">
+</body>
+</html>
