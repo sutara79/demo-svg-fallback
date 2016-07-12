@@ -10,6 +10,7 @@ https://sutara79.github.io/demo-svg-fallback/
 公式ページで必要な判定機能だけを選んで、最小の要領に抑えたファイルをダウンロードできます。  
 その際、IE8でもHTML5タグを認識させる「html5shiv」をファイルに含めることができるので、是非そうすることをお勧めします。  
 下記のURLを開くと、すでにSVGの判定とhtml5shivだけを選択した状態になっているので、すぐにビルドできます。  
+ただし、「Add CSS classes」のチェックは外したほうがいいです。  
 https://modernizr.com/download?svg-shiv
 
 ## CDNからModernizrを使う場合の注意
